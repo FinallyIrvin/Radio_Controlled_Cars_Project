@@ -1,2 +1,4 @@
-package com.rccars.controller;public class InventoryGenerator {
+package com.rccars.controller;
+
+public class InventoryGenerator {
 }

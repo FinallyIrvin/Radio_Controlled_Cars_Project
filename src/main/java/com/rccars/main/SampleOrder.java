@@ -1,2 +1,4 @@
-package com.rccars.main;public class SampleOrder {
+package com.rccars.main;
+
+public class SampleOrder {
 }

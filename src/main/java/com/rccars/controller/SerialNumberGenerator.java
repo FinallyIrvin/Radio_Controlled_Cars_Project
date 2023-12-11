@@ -1,2 +1,4 @@
-package com.rccars.controller;public class SerialNumberGenerator {
+package com.rccars.controller;
+
+public class SerialNumberGenerator {
 }

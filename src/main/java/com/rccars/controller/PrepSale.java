@@ -1,2 +1,4 @@
-package com.rccars.controller;public class PrepSale {
+package com.rccars.controller;
+
+public class PrepSale {
 }

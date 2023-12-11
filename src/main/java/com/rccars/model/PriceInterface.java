@@ -1,2 +1,7 @@
-package com.rccars.model;public interface PriceInterface {
+package com.rccars.model;
+
+import java.math.BigDecimal;
+
+public interface PriceInterface {
+    BigDecimal getPrice();
 }

@@ -1,2 +1,4 @@
-package com.rccars.main;public class SampleReceipt {
+package com.rccars.main;
+
+public class SampleReceipt {
 }
