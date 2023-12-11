@@ -15,9 +15,9 @@ public class AbstractCar implements PriceInterface, CarInterface {
         this.modelNumber = modelNumber;
     }
 
-    private abstract String getWheelType();
-    private abstract String getTireType();
-    private abstract String getPrefix();
+    public abstract String getWheelType();
+    public abstract String getTireType();
+    public abstract String getPrefix();
     public abstract int getStartNumber();
     public abstract BigDecimal getPrice();
     public abstract String getOptionName();
