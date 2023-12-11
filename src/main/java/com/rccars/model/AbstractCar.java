@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class AbstractCar implements PriceInterface, CarInterface {
 
-    private final ShellColors color;
+    private ShellColors color;
     private BodyShells shell;
     private ModelNumber modelNumber;
     private String serial;
