@@ -13,9 +13,13 @@ public class SampleReceipt {
     ArrayList<AbstractCar> upgradeCart;
     ArrayList<Accessories> accessoriesCart;
 
-    public SampleReceipt(ArrayList<AbstractCar> bikeList,
-                         ArrayList<AbstractCar> upgrad,
+    public SampleReceipt(ArrayList<AbstractCar> rcList,
+                         ArrayList<AbstractCar> upgradeList,
                          ArrayList<Accessories> accessoriesList) {
+        rcCart = rcList;
+        upgradeCart = upgradeList;
+        accessoriesCart = accessoriesList;
+        showTitle
 
     }
 
