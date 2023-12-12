@@ -13,4 +13,6 @@ public abstract class AbstractCarOptions extends AbstractCar {
 
     public abstract String getOptionName();
     public abstract BigDecimal getOptionAmount();
+
+    public abstract String getWheelTyp();
 }
