@@ -19,7 +19,12 @@ public class SportCar extends AbstractStreetCar{
     }
 
     @Override
-    public String getPrefix() {
-        return "";
+    public int getPrefix() {
+        return 357901;
+    }
+
+    @Override
+    public String toString() {
+        return "Sport Car";
     }
 }
