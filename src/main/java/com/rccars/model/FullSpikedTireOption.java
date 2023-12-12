@@ -4,7 +4,8 @@ import java.math.BigDecimal;
 
 public class FullSpikedTireOption extends AbstractCarOptions{
 
-    public FullSpikedtireOption(AbstractCar car) {
+
+    public FullSpikedTireOption(AbstractCar car) {
         super(car);
     }
 
