@@ -1,23 +1,32 @@
 package com.rccars.main;
 
 import com.rccars.controller.SerialNumberGenerator;
-import com.rccars.model.SportCar;
+import com.rccars.model.*;
 
 public class Main {
     public static void main(String[] args) {
 
         testSerialNumbers();
+        // testModelNumbers();
 
     }
 
     public static void testSerialNumbers() {
-        SportCar sportCar = new SportCar();
-        SerialNumberGenerator generator =
+        SUVCar sportCar = new SUVCar();
+        SerialNumberGenerator scGenerator =
                 SerialNumberGenerator.getInstance();
-        generator.startGeneration(sportCar.getPrefix(),
-                sportCar.getStartNumber());
-        sportCar.setSerialNumber(generator.getNextSerial());
+        scGenerator.startGeneration(sportCar.getPrefix(), sportCar.getStartNumber());
+        sportCar.setSerialNumber(scGenerator.getNextSerial());
         System.out.println(sportCar.getSerialNumber());
+
+        System.out.println("Next serial in line is " +
+                scGenerator.getNextSerial());
+    }
+
+    public static void testModelNumbers() {
+        SportCar modelSport = new SportCar();
+        System.out.println("Sport model # is " + modelSport.getModelNumber());
+        System.out.println("");
     }
 
 

@@ -2,7 +2,7 @@ package com.rccars.controller;
 
 public class SerialNumberGenerator {
     public static SerialNumberGenerator generate;
-    private int prefix;
+    private String prefix;
     private int startValue;
 
     public static synchronized SerialNumberGenerator
@@ -16,12 +16,12 @@ public class SerialNumberGenerator {
     private SerialNumberGenerator() {
     }
 
-    public synchronized void startGeneration(int model, int startNumber) {
+    public synchronized void startGeneration(String model, int startNumber) {
         prefix = model;
         startValue = startNumber;
     }
 
-    public synchronized int getNextSerial() {
+    public synchronized String getNextSerial() {
         return prefix + (++startValue);
     }
 

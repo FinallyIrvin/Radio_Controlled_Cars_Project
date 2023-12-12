@@ -9,8 +9,8 @@ public class SUVCar extends AbstractStreetCar {
     }
 
     @Override
-    public int getPrefix() {
-        return 642852;
+    public String getPrefix() {
+        return "642852";
     }
 
     @Override
