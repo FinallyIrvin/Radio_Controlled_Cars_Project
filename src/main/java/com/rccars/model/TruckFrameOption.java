@@ -16,11 +16,7 @@ public class TruckFrameOption extends AbstractCarOptions {
     @Override
     public BigDecimal getOptionAmount() {
         return  BigDecimal.valueOf(49.99);
-    }
 
-    @Override
-    public String getWheelTyp() {
-        return customCar.getWheelType();
     }
 
     @Override
@@ -43,7 +39,7 @@ public class TruckFrameOption extends AbstractCarOptions {
 
     }
     @Override
-    public String getSerialNumber() {
+    public int getSerialNumber() {
         return customCar.getSerialNumber();
     }
     @Override
