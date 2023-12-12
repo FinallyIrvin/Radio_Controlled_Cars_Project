@@ -41,7 +41,7 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
     public String getSerialNumber() {
         return serial;
     }
-    
+
 
     @Override
     public String washShell() {
