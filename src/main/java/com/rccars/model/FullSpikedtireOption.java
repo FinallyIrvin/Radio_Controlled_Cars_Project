@@ -4,12 +4,20 @@ import java.math.BigDecimal;
 
 public class FullSpikedtireOption extends  AbstractCarOptions{
 
-    public FullSpikedtireOption(AbstractCar car)
+    public FullSpikedtireOption(AbstractCar car) {
+        super(car);
+    }
 
     @Override
     public String getOptionName() {
         return "Full Spiked Tire Option";
     }
+
+    @Override
+    public BigDecimal getOptionAmount() {
+        return BigDecimal.valueOf(26.99);
+    }
+
     @Override
     public BigDecimal getPrice() {
         return customCar.getPrice();
@@ -21,7 +29,7 @@ public class FullSpikedtireOption extends  AbstractCarOptions{
 
     @Override
     public String getWheelType() {
-        return null;
+        return customCar.getWheelType();
     }
 
     @Override
@@ -30,7 +38,7 @@ public class FullSpikedtireOption extends  AbstractCarOptions{
 
     }
     @Override
-    public String getSerialNumber() {
+    public int getSerialNumber() {
         return customCar.getSerialNumber();
     }
     @Override
