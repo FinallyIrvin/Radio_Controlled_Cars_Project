@@ -22,7 +22,6 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
     public abstract String getOptionName();
     public abstract BigDecimal getOptionAmount();
 
-
     public ShellColors getShellColor() {
         return color;
     }
@@ -42,10 +41,7 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
     public String getSerialNumber() {
         return serial;
     }
-
-    public String getTireType() {
-        return "Miniature Spiked Tires";
-    }
+    
 
     @Override
     public String washShell() {
