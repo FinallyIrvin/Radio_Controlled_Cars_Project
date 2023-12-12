@@ -2,29 +2,29 @@ package com.rccars.model;
 
 import java.math.BigDecimal;
 
-public class SportCar extends AbstractStreetCar{
+public class SUVCar extends AbstractStreetCar {
 
-    public SportCar() {
-        super(ShellColors.RED, BodyShells.SPORT, ModelNumber.SPT2019);
+    public SUVCar() {
+        super(ShellColors.GREY, BodyShells.SUV, ModelNumber.SUV3019);
     }
 
     @Override
     public int getPrefix() {
-        return 357901;
+        return 642852;
     }
 
     @Override
     public int getStartNumber(){
-        return 9753;
+        return 8647;
     }
 
     @Override
     public BigDecimal getPrice() {
-        return BigDecimal.valueOf(199.99);
+        return BigDecimal.valueOf(124.99);
     }
 
     @Override
     public String toString() {
-        return "Sport Car";
+        return "SUV Car";
     }
 }
