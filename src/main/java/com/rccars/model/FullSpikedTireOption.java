@@ -2,9 +2,11 @@ package com.rccars.model;
 
 import java.math.BigDecimal;
 
-public class FullSpikedtireOption extends  AbstractCarOptions{
+public class FullSpikedTireOption extends AbstractCarOptions{
 
-    public FullSpikedtireOption(AbstractCar car)
+    public FullSpikedTireOption(AbstractCar car) {
+        super(car);
+    }
 
     @Override
     public String getOptionName() {
@@ -30,7 +32,7 @@ public class FullSpikedtireOption extends  AbstractCarOptions{
 
     }
     @Override
-    public String getSerialNumber() {
+    public int getSerialNumber() {
         return customCar.getSerialNumber();
     }
     @Override

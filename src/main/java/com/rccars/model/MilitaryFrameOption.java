@@ -41,7 +41,7 @@ public class MilitaryFrameOption extends AbstractCarOptions {
         return customCar.getWheelType();
     }
     @Override
-    public String getSerialNumber() { return customCar.getSerialNumber(); }
+    public int getSerialNumber() { return customCar.getSerialNumber(); }
 
     @Override
     public  String toString() { return customCar.toString(); }
