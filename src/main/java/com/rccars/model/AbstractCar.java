@@ -34,11 +34,11 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
         return modelNumber;
     }
 
-    public void setSerialNumber(String serial) {
+    public void setSerialNumber(int serial) {
         this.serial = serial;
     }
 
-    public String getSerialNumber() {
+    public int getSerialNumber() {
         return serial;
     }
 
