@@ -16,7 +16,7 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
     }
 
     public abstract String getWheelType();
-    public abstract String getPrefix();
+    public abstract int getPrefix();
     public abstract int getStartNumber();
     public abstract BigDecimal getPrice();
     public abstract String getOptionName();
