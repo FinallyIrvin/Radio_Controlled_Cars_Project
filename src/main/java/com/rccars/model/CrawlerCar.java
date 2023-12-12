@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class CrawlerCar extends  AbstractOffRoadCar {
 
     public CrawlerCar() {
-        super(ShellColors.GREEN, BodyShells.DUNEBUGGY, ModelNumber.ORCR4600);
+        super(ShellColors.GREEN, BodyShells.CRAWLER, ModelNumber.ORCR4600);
     }
 
     @Override
@@ -18,8 +18,8 @@ public class CrawlerCar extends  AbstractOffRoadCar {
         return 3398;
     }
     @Override
-    public int getPrefix() {
-        return 756643;
+    public String getPrefix() {
+        return "756643";
     }
     @Override
     public String toString() {

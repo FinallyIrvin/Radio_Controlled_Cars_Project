@@ -19,8 +19,8 @@ public class DuneBuggyCar extends AbstractOffRoadCar{
     }
 
     @Override
-    public int getPrefix() {
-        return 885532;
+    public String getPrefix() {
+        return "885532";
     }
 
     @Override

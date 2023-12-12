@@ -16,7 +16,7 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
     }
 
     public abstract String getWheelType();
-    public abstract int getPrefix();
+    public abstract String getPrefix();
     public abstract int getStartNumber();
     public abstract BigDecimal getPrice();
     public abstract String getOptionName();
@@ -34,11 +34,11 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
         return modelNumber;
     }
 
-    public void setSerialNumber(int serial) {
+    public void setSerialNumber(String serial) {
         this.serial = serial;
     }
 
-    public int getSerialNumber() {
+    public String getSerialNumber() {
         return serial;
     }
 

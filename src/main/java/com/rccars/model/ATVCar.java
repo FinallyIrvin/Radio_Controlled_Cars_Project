@@ -17,8 +17,8 @@ public class ATVCar extends AbstractOffRoadCar {
         return 8488;
     }
     @Override
-    public int getPrefix() {
-        return 113342;
+    public String getPrefix() {
+        return "113342";
     }
     @Override
     public String toString() {

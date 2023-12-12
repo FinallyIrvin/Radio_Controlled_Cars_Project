@@ -34,12 +34,12 @@ public class FullSpikedTireOption extends AbstractCarOptions{
     }
 
     @Override
-    public int getPrefix() {
+    public String getPrefix() {
         return customCar.getPrefix();
 
     }
     @Override
-    public int getSerialNumber() {
+    public String getSerialNumber() {
         return customCar.getSerialNumber();
     }
     @Override
