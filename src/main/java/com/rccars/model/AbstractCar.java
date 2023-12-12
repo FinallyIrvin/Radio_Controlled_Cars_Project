@@ -2,7 +2,7 @@ package com.rccars.model;
 
 import java.math.BigDecimal;
 
-public class AbstractCar implements PriceInterface, CarInterface {
+public abstract class AbstractCar implements PriceInterface, CarInterface {
 
     private ShellColors color;
     private BodyShells shell;
@@ -16,12 +16,12 @@ public class AbstractCar implements PriceInterface, CarInterface {
     }
 
     public abstract String getWheelType();
-    public abstract String getTireType();
     public abstract String getPrefix();
     public abstract int getStartNumber();
     public abstract BigDecimal getPrice();
     public abstract String getOptionName();
     public abstract BigDecimal getOptionAmount();
+
 
     public ShellColors getShellColor() {
         return color;
@@ -41,6 +41,10 @@ public class AbstractCar implements PriceInterface, CarInterface {
 
     public String getSerialNumber() {
         return serial;
+    }
+
+    public String getTireType() {
+        return "Miniature Spiked Tires";
     }
 
     @Override
