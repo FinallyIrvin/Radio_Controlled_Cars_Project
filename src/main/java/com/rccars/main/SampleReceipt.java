@@ -1,6 +1,6 @@
 package com.rccars.main;
 
-/*
+
 import com.rccars.model.AbstractCar;
 import com.rccars.model.Accessories;
 
