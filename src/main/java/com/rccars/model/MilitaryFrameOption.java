@@ -26,25 +26,24 @@ public class MilitaryFrameOption extends AbstractCarOptions {
     public int getStartNumber() {
         return customCar.getStartNumber();
     }
-
-    @Override
-    public String getWheelType() {
-        return null;
-    }
-
     @Override
     public int getPrefix() {
         return customCar.getPrefix();
     }
     @Override
-    public String getWheelTyp() {
+    public String getWheelType() {
         return customCar.getWheelType();
     }
     @Override
-    public int getSerialNumber() { return customCar.getSerialNumber(); }
+    public int getSerialNumber() {
+        return customCar.getSerialNumber();
+    }
 
     @Override
-    public  String toString() { return customCar.toString(); }
+    public String toString() {
+        return customCar.toString();
+    }
+
 
 
 }
