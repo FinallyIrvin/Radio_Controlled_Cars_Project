@@ -7,7 +7,7 @@ public abstract class AbstractCarOptions extends AbstractCar {
     protected AbstractCar customCar;
 
     public AbstractCarOptions(AbstractCar car) {
-        super(car.getShellColor(), car.getBodyShell(), car.getModelNumber());
+        super(car.getShellColor(), car.getBodyShell(), car.getModelNumber(), car.getFrame());
         customCar = car;
     }
 

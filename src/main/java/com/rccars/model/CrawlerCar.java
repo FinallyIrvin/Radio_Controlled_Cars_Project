@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class CrawlerCar extends  AbstractOffRoadCar {
 
     public CrawlerCar() {
-        super(ShellColors.GREEN, BodyShells.CRAWLER, ModelNumber.ORCR4600);
+        super(ShellColors.GREEN, BodyShells.CRAWLER, ModelNumber.ORCR4600, "CAR");
     }
 
     @Override
