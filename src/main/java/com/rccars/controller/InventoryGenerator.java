@@ -52,7 +52,7 @@ public class InventoryGenerator {
         SportCar car = new SportCar();
         generator.startGeneration(car.getPrefix(), car.getStartNumber());
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 7; i++) {
             car = new SportCar();
             car.setSerialNumber(generator.getNextSerial());
             carList.add(i, car);
@@ -64,7 +64,7 @@ public class InventoryGenerator {
         SUVCar car = new SUVCar();
         generator.startGeneration(car.getPrefix(), car.getStartNumber());
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 7; i++) {
             car = new SUVCar();
             car.setSerialNumber(generator.getNextSerial());
             carList.add(i, car);
@@ -76,7 +76,7 @@ public class InventoryGenerator {
         ClassicCar car = new ClassicCar();
         generator.startGeneration(car.getPrefix(), car.getStartNumber());
 
-        for (int i = 0; i <5; i++) {
+        for (int i = 0; i < 7; i++) {
             car = new ClassicCar();
             car.setSerialNumber(generator.getNextSerial());
             carList.add(i, car);
@@ -88,7 +88,7 @@ public class InventoryGenerator {
         ATVCar car = new ATVCar();
         generator.startGeneration(car.getPrefix(), car.getStartNumber());
 
-        for (int i = 0; i <5; i++) {
+        for (int i = 0; i < 7; i++) {
             car = new ATVCar();
             car.setSerialNumber(generator.getNextSerial());
             carList.add(i, car);
@@ -100,7 +100,7 @@ public class InventoryGenerator {
         DuneBuggyCar car = new DuneBuggyCar();
         generator.startGeneration(car.getPrefix(), car.getStartNumber());
 
-        for (int i = 0; i <5; i++) {
+        for (int i = 0; i < 7; i++) {
             car = new DuneBuggyCar();
             car.setSerialNumber(generator.getNextSerial());
             carList.add(i, car);
@@ -112,7 +112,7 @@ public class InventoryGenerator {
         CrawlerCar car = new CrawlerCar();
         generator.startGeneration(car.getPrefix(), car.getStartNumber());
 
-        for (int i = 0; i <5; i++) {
+        for (int i = 0; i < 7; i++) {
             car = new CrawlerCar();
             car.setSerialNumber(generator.getNextSerial());
             carList.add(i, car);

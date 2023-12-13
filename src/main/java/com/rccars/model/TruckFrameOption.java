@@ -30,7 +30,7 @@ public class TruckFrameOption extends AbstractCarOptions {
 
     @Override
     public String getWheelType() {
-        return null;
+        return customCar.getWheelType();
     }
 
     @Override

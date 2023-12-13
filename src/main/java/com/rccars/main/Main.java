@@ -9,12 +9,18 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
+         orderItems();
         // testSerialNumbers();
         // testModelNumbers();
-         testCar();
+        // testCar();
         // testCustomOptions();
         // testReceipt();
 
+    }
+
+    public static void orderItems() {
+        SampleOrder order = new SampleOrder();
+        order.welcomeMessage();
     }
 
     public static void testSerialNumbers() {

@@ -22,7 +22,6 @@ public class SampleReceipt {
         showTitle();
         shortColumnHeader();
         showrcCart();
-        accessoriesTab();
         showAccessoryCart();
         showTotals();
 
@@ -77,18 +76,17 @@ public class SampleReceipt {
         }
     }
 
-    private void accessoriesTab() {
-        System.out.println("Accessories");
-
-    }
     private void showAccessoryCart() {
-        for (Accessories item : accessoriesCart) {
-            System.out.print("\t" + item.getItemName());
-            String price = String.format("%35s", "$" +
-                    item.getPrice());
-            System.out.println(price);
-            System.out.println();
-            total += item.getPrice().doubleValue();
+        if (!rcCart.isEmpty()) {
+            for (Accessories item : accessoriesCart) {
+                System.out.println("Accessories");
+                System.out.print("\t" + item.getItemName());
+                String price = String.format("%35s", "$" +
+                        item.getPrice());
+                System.out.println(price);
+                System.out.println();
+                total += item.getPrice().doubleValue();
+            }
         }
     }
 
