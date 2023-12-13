@@ -10,17 +10,17 @@ import java.util.Scanner;
 public class SampleOrder {
     private final ArrayList<AbstractCar> carOrder;
     private final ArrayList<AbstractCar> customOptionsList;
-    private final ArrayList<Accessories> acessoryOrder;
+    private final ArrayList<Accessories> accessoryOrder;
     private final Scanner userIn;
     private final InventoryGenerator inventory;
     private AbstractCar carChoice;
     private AbstractCar optionsChoice;
-    private Accessories carxtra;
+    private Accessories carExtra;
 
     public SampleOrder() {
         carOrder = new ArrayList<>();
         customOptionsList = new ArrayList<>();
-        acessoryOrder = new ArrayList<>();
+        accessoryOrder = new ArrayList<>();
         userIn = new Scanner(System.in);
         inventory = new InventoryGenerator();
     }
@@ -53,7 +53,7 @@ public class SampleOrder {
     }
 
     private void orderDone() {
-        new SampleReceipt(carOrder, customOptionsList, acessoryOrder);
+        new SampleReceipt(carOrder, customOptionsList, accessoryOrder);
 
 
     private void anotherCar() {
