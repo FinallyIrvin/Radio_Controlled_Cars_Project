@@ -1,5 +1,6 @@
 package com.rccars.model;
 
+import java.awt.*;
 import java.math.BigDecimal;
 
 public abstract class AbstractCar implements PriceInterface, CarInterface {
@@ -8,12 +9,15 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
     private BodyShells shell;
     private ModelNumber modelNumber;
     private String serial;
+    private String frame;
 
-    public AbstractCar(ShellColors color, BodyShells shell, ModelNumber modelNumber) {
+    public AbstractCar(ShellColors color, BodyShells shell, ModelNumber modelNumber, String frame) {
         this.color = color;
         this.shell = shell;
         this.modelNumber = modelNumber;
+        this.frame = frame;
     }
+
 
     public abstract String getWheelType();
     public abstract String getPrefix();
@@ -21,6 +25,8 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
     public abstract BigDecimal getPrice();
     public abstract String getOptionName();
     public abstract BigDecimal getOptionAmount();
+
+
 
     public ShellColors getShellColor() {
         return color;
@@ -38,9 +44,15 @@ public abstract class AbstractCar implements PriceInterface, CarInterface {
         this.serial = serial;
     }
 
+    public String getFrame() {
+        return frame;
+    }
+
     public String getSerialNumber() {
         return serial;
     }
+
+
 
 
     @Override

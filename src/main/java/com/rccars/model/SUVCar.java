@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class SUVCar extends AbstractStreetCar {
 
     public SUVCar() {
-        super(ShellColors.GREY, BodyShells.SUV, ModelNumber.SUV3019);
+        super(ShellColors.GREY, BodyShells.SUV, ModelNumber.SUV3019, "CAR");
     }
 
     @Override

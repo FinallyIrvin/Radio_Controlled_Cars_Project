@@ -11,9 +11,9 @@ public class Main {
 
         // testSerialNumbers();
         // testModelNumbers();
-        // testCar();
+         testCar();
         // testCustomOptions();
-        testReceipt();
+        // testReceipt();
 
     }
 
@@ -32,11 +32,11 @@ public class Main {
 
 
     public static void testCar() {
-        CrawlerCar car = new CrawlerCar();
+        SportCar car = new SportCar();
         System.out.println("The price of the " + car.getBodyShell() + " car is " + car.getPrice());
         System.out.println("The model number for this car is " + car.getModelNumber());
         System.out.println("The default options for this car are \n" + car.getWheelType() + " tires\n" +
-                car.getShellColor() + " shell color");
+                car.getShellColor() + " shell color\n" + car.getFrame() + " frame");
 
     }
 

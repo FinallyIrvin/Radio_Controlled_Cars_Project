@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class ATVCar extends AbstractOffRoadCar {
 
     public ATVCar(){
-        super(ShellColors.BLUE,BodyShells.ATV,ModelNumber.ORAT2400);
+        super(ShellColors.BLUE,BodyShells.ATV,ModelNumber.ORAT2400, "CAR");
     }
 
     @Override
