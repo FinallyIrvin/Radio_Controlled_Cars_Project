@@ -77,9 +77,9 @@ public class SampleReceipt {
     }
 
     private void showAccessoryCart() {
-        if (!rcCart.isEmpty()) {
+        if (!accessoriesCart.isEmpty()) {
+            System.out.println("Accessories");
             for (Accessories item : accessoriesCart) {
-                System.out.println("Accessories");
                 System.out.print("\t" + item.getItemName());
                 String price = String.format("%35s", "$" +
                         item.getPrice());

@@ -32,9 +32,9 @@ public class SampleOrder {
     }
 
     private void buySomething() {
-        System.out.println("Are here to buy " +
+        System.out.println("Are you here to buy " +
                 "a radio controlled car or car accessories?");
-        System.out.println("1 for accessories \n2 for a car");
+        System.out.println("1 for car \n2 for accessories");
         String type = userIn.next();
         validateSomething(type);
     }
@@ -49,7 +49,6 @@ public class SampleOrder {
         offerUpgrades();
         carOrder.add(carChoice);
         anotherCar();
-        orderDone();
     }
 
     private void orderDone() {
@@ -58,7 +57,7 @@ public class SampleOrder {
 
     private void anotherCar() {
         System.out.println("Would you like to add another car?\n" +
-                "Press 1 for yes or 2 for no");
+                "1 for yes\n2 for no");
         String answer = userIn.next();
         validateAnotherCar(answer);
     }
@@ -79,7 +78,7 @@ public class SampleOrder {
                 " is a " + car.getFrame().toLowerCase() + " frame");
         System.out.println("Would you like this car" +
                 " with a different frame?\n" +
-                "Press 1 for yes or 2 for no");
+                "1 for yes\n2 for no");
         String choice = userIn.next();
         switch (choice.toLowerCase()) {
             case "1":
@@ -104,14 +103,14 @@ public class SampleOrder {
 
     public void offerAccessories() {
         System.out.println("Do you want to buy any accessories?\n" +
-                "Press 1 for yes or 2 for no");
+                "1 for yes\n2 for no");
         String answer = userIn.next();
         validateOffer(answer);
 
     }
 
     private void buyAccessories() {
-        System.out.println("What Accessories are you interested in?");
+        System.out.println("What accessories are you interested in?");
         System.out.println("Your options are:\n1 - Repair set\n2 - Decals\n3 - Light bar\n4 - Work stand\n5 - Extra battery");
         String item = userIn.next();
         validateAccessory(item.toLowerCase());
@@ -121,7 +120,7 @@ public class SampleOrder {
 
     private void moreAccessories() {
         System.out.println("Do you want to add more Accessories?\n" +
-                "Press 1 for yes or 2 for no");
+                "1 for yes\n2 for no");
         String val = userIn.next();
 
         switch (val) {
@@ -263,10 +262,10 @@ public class SampleOrder {
     private void validateSomething(String type) {
         switch (type) {
             case "1":
-                buyAccessories();
+                buyCar();
                 break;
             case "2":
-                buyCar();
+                buyAccessories();
                 break;
             default:
                 System.out.println("You have entered an invalid choice");
