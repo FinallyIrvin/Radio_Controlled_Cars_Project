@@ -22,6 +22,7 @@ public class SampleReceipt {
         showTitle();
         shortColumnHeader();
         showrcCart();
+        accessoriesTab();
         showAccessoryCart();
         showTotals();
 
@@ -29,8 +30,8 @@ public class SampleReceipt {
 
     private void showTitle() {
         String company = String.format("%30s", "R/C Madness Company");
-        String address = String.format("%33s", "1265 Sumner ave, Kansas City, Kansas");
-        String phone = String.format("27s", "(913) 281 - 3568");
+        String address = String.format("%33s", "  1265 Sumner ave, Kansas City, Kansas");
+        String phone = String.format("%27s", "(913) 281 - 3568");
         System.out.println(company);
         System.out.println(address);
         System.out.println(phone);
@@ -52,7 +53,7 @@ public class SampleReceipt {
                 System.out.println("\tShell Color: " +
                         car.getShellColor());
                 total += car.getPrice().doubleValue();
-                String carPrice = String.format("30s",
+                String carPrice = String.format("%30s",
                         "$" + car.getPrice());
                 System.out.println("\tCar Price: " +
                         carPrice);
@@ -67,7 +68,7 @@ public class SampleReceipt {
     private void showUpgradeCart(AbstractCar car) {
         for (AbstractCar upgrade : upgradeCart) {
             if (upgrade.toString().equals(car.toString())) {
-                String customPrice = String.format("%22",
+                String customPrice = String.format("%45s",
                         "$" + upgrade.getOptionAmount());
                 System.out.println("\t" + upgrade.getOptionName());
                 System.out.println(customPrice);
@@ -76,6 +77,10 @@ public class SampleReceipt {
         }
     }
 
+    private void accessoriesTab() {
+        System.out.println("Accessories");
+
+    }
     private void showAccessoryCart() {
         for (Accessories item : accessoriesCart) {
             System.out.print("\t" + item.getItemName());
@@ -93,16 +98,16 @@ public class SampleReceipt {
         double taxAmount = totalWithTax - total;
         showStars();
         System.out.print("Sub Total");
-        System.out.printf("%27s %.2f%n", "$", total);
+        System.out.printf("%25s %.2f%n", "$", total);
         System.out.print("Sales Tax");
-        System.out.printf("%28s %.2f%n", "$", taxAmount);
+        System.out.printf("%26s %.2f%n", "$", taxAmount);
         System.out.print("Total");
-        System.out.printf("%31s %.2f%n", "$", totalWithTax);
+        System.out.printf("%29s %.2f%n", "$", totalWithTax);
 
     }
 
     private void showStars() {
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < 45; i++) {
             System.out.print("*");
         }
         System.out.println();
