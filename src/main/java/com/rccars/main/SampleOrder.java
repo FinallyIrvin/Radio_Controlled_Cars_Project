@@ -76,7 +76,7 @@ public class SampleOrder {
             System.out.println("Our cars come with a" +
             " default frame.");
             System.out.println("Your current frame" +
-                    " is "+ (car.get);
+                    " is "+ (car.getFrame());
     }
     
 
